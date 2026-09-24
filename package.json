@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-19hz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "19hz.info MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-19hz": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "19hz"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-19hz"
+    "url": "git+https://github.com/pipeworx-io/mcp-19hz.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-2c0d7aea72280f14ae0f432cd6dfb011f4834a57e6d07c0b4285dc4c34756a79",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
