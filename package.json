@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-19hz",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "19hz.info MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-2c0d7aea72280f14ae0f432cd6dfb011f4834a57e6d07c0b4285dc4c34756a79",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-2e6284ab96dd63db028716afbcb80cacf96b76b4ff3b245f19f4ce736b279353",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
