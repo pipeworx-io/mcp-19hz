@@ -1,0 +1,42 @@
+[
+  {
+    "name": "regions",
+    "description": "List the regions 19hz covers (slug + label). Pass a slug to the events tool. Note: electronic/dance music focus (house, techno, bass, etc.).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "events",
+    "description": "List upcoming electronic/dance music events for a 19hz region. Optionally filter by keyword (matches title, venue, genre, or artist) and a date window. Returns normalized events sorted by date.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "region": {
+          "type": "string",
+          "description": "Region slug, e.g. \"bayarea\", \"losangeles\", \"texas\". Use the regions tool to list all."
+        },
+        "query": {
+          "type": "string",
+          "description": "Optional keyword filter, e.g. \"techno\", a venue name, or an artist."
+        },
+        "from": {
+          "type": "string",
+          "description": "Only events on/after this date (YYYY-MM-DD)."
+        },
+        "to": {
+          "type": "string",
+          "description": "Only events on/before this date (YYYY-MM-DD)."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max events to return (1-200, default 50)."
+        }
+      },
+      "required": [
+        "region"
+      ]
+    }
+  }
+]
